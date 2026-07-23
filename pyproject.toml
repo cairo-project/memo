@@ -33,7 +33,7 @@ dependencies = [
     'moviepy==1.0.3',
     'numpy==1.26.4',
     'omegaconf==2.3.0',
-    'onnxruntime-gpu>=1.20.1',
+    'onnxruntime-gpu>=1.20.1,<1.22',
     'opencv-python-headless==4.10.0.84',
     'pillow>=10.4.0',
     'scikit-learn>=1.5.2',
@@ -52,6 +52,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["memo"]
+py-modules = ["generate_memo"]
 
 [tool.ruff]
 line-length = 119

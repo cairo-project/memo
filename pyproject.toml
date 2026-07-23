@@ -51,8 +51,10 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["memo"]
 py-modules = ["generate_memo"]
+
+[tool.setuptools.packages.find]
+include = ["memo*"]
 
 [tool.ruff]
 line-length = 119
